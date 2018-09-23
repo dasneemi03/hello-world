@@ -1,0 +1,166 @@
+<html>
+    
+    <head>
+
+        <title>HTML Links</title>
+        <link href="https://fonts.googleapis.com/css?family=Lora|Noto+Serif|Playfair+Display" rel="stylesheet">
+    
+
+        <style>
+            body {
+                
+                background-color: antiquewhite;
+               font-family: 'Playfair Display', serif;
+               font-family: 'Lora', serif;
+               font-family: 'Noto Serif', serif;
+            }
+
+            h1 {
+                
+                font-size:40px;
+                color: #7B0A42;
+            }
+            
+            .output-box {
+                margin: auto;
+                text-align: center;
+                border: 2px solid black;
+                width: 50%;
+                height: 10%;
+                background-color: aliceblue;
+            }
+            
+            .container1{
+                
+                float: center;
+                margin: auto;
+                font-size: 20px;
+                width: 90%;
+            }
+            .code-image {
+                
+                margin:10px;
+                width: 50%;
+                height:15%;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+        </style>
+    
+    </head>
+    
+    <body style="text-align: center">
+        <b><h1 style="text-align: center">HTML LINKS</h1></b>
+        <div class="container1">
+            <p>HTML uses the <code style="color:blue">&lt;a&gt;</code> anchor tag to create a link to another document or web page. </p>
+        Links, otherwise known as <b><i style="color:forestgreen">hyperlinks</i></b>, are defined using the <code style="color:blue">&lt;a&gt;</code> tag — otherwise known as the anchor element.
+
+<br>To create a hyperlink, you use the tag in conjunction with the href attribute. The value of the href attribute is the URL,<br> or, location of where the link is pointing to.
+        
+            <p style="color:#002C53"> Example:</p>
+        
+        
+        <img src="code1.png" alt="code" width="50%" height="10%" class="code-image">
+            <br><p style="color:#002C53">Output:</p>
+            <div class="output-box"><p>Here are some <a href="#">HTML Links</a>..</p></div>
+        <p>Hypertext references can use <b><i style="color:forestgreen">absolute</i></b> URLS, <b><i style="color:forestgreen">relative</i></b> URLs, or <b><i style="color:forestgreen">root relative</i></b> URLs.</p>
+            <u><h2>Absolute</h2></u>
+        This refers to a URL where the full path is provided. For example:
+        <br>
+    <img src="code2.png" alt="code"  width="50%" height="10%" class="code-image">
+    
+        
+            <u><h2>Relative</h2></u>
+        <br>This refers to a URL where the path, relative to the current location, is provided.
+
+        For example, if we want to reference <b>the https://www.quackit.com/html/tutorial/ URL</b>, and our current location is <b>https://www.quackit.com/html/</b>, we would use this:
+        <br><img src="code3.png" alt="code" width="50%" height="10%" class="code-image">
+        
+        
+            <u><h2>Root Relative</h2></u>
+     This refers to a URL where the path, relative to the domain's root, is provided.
+
+        For example, if we want to reference the <b>https://www.quackit.com/html/tutorial/ URL</b>, and the current location is <b>https://www.quackit.com/html/</b>, we could use this:
+        <br><img src="code4.png" alt="code" width="50%" height="10%" class="code-image">
+        
+        
+        <p>The forward slash indicates the domain's root. No matter where your file is located, you can always use<br> this method to specify the path, even if you don't know what the domain name will eventually be (as long as you know the <br>full path from the root).</p>
+        <hr>
+        <h2>LINK TARGETS</h2>
+        <p>You can nominate whether to open the URL in a new window or the current window. You do this with<br> the <code style="color:blue">target</code> attribute. For example, <code style="color:blue">target="_blank"</code> opens the URL in a new window.</p>
+        
+        <p>The target attribute can have the following possible values:</p>
+<table border="1" color="grey" align="center" cellspacing="0" cellpadding="10">
+	<tr>
+        <td><b><code style="color:#FA1F2A ">_blank</code></b></td><td>Opens the URL in a <strong>new</strong> browser window.</td>
+	</tr>
+	<tr>
+        <td><b><code style="color:#FA1F2A ">_self</code></b></td><td>Loads the URL in the <strong>current</strong> browser window.</td>
+	</tr>
+	<tr>
+        <td><b><code style="color:#FA1F2A ">_parent</code></b></td><td>Loads the URL into the <strong>parent</strong> frame (still within the current browser window). This is only applicable when using frames.</td>
+	</tr>
+	<tr>
+        <td><b><code style="color:#FA1F2A ">_top</code></b></td><td>Loads the URL in the <strong>current</strong> browser window, but cancelling out any frames. Therefore, if frames were being used, they aren't any longer.</td>
+	</tr>
+</table>
+        <p>Example:</p>
+        <img src="code5.png" alt="code" width="50%" height="10%" class="code-image">
+            
+            <p>Output:</p>
+         <div class="output-box"><a href="#"><p>Quackit</p></a></div>
+        <br>
+            <hr>
+        <h2>JUMP LINKS</h2>
+        <p>You can make your links <b>"jump"</b> to other sections within the same page (or another page). These used to be <br>called <b>"named anchors"</b>, but they're often referred to as jump links, bookmarks, or fragment identifiers.</p>
+            
+
+<p>Here's how to link to the same page:</p>
+        
+     
+    <h3>1.  Add an ID to the Link Target</h3>
+    <p>Add an ID to the part of the page that you want the user to end up. To do this, use the <code style="color:blue">id</code> attribute. The value should be some short descriptive text. The <code style="color:blue">id</code> attribute is a commonly used attribute in HTML. </p>
+    
+<br><img src="code6.png" alt="code" width="50%" height="10%" class="code-image">
+           
+        <hr>
+            
+        <h3>2.  Create the Hyperlink</h3>
+        <p>Now create the hyperlink (that the user will click on). This is done by using the <code style="color:blue">id</code> of the link target, preceded by a hash (<code style="color:blue">#</code>) symbol:</p>
+            
+        <br><img src="code7.png" alt="code" width="50%" height="10%">
+       <br> 
+<hr>
+        
+        <h2>EMAIL LINKS</h2>
+        <p>You can create a hyperlink to an email address. To do this, use the <code style="color:blue">mailto</code> attribute in your anchor tag.</p>
+
+<p>Example:</p>
+<img src="code7.png" alt="code" width="50%" height="10%">
+        
+        <p>Clicking on this link should result in your default email client opening up with the email address already filled out.</p>
+<p>You can go a step further than this. You can auto-complete the subject line for your users, and even the body of the email. You do this appending <code style="color:blue">subject</code> and <code style="color:blue">body</code> parameters to the email address.</p>
+
+<br><img src="code9.png" alt="code" width="50%" height="10%" class="code-image">
+        
+              <p>Output:</p>
+         <div class="output-box"><a href="#"><p>Email King Kong</p></a></div>
+            
+            <br>
+            <hr>
+<h2>Base href</h2>
+<p>You can specify a default URL for all links on the page to start with. You do this by placing the <code style="color:blue">base</code> tag (in conjunction with the <code style="color:blue">href</code> attribute) in the document's <a href=#><code style="color:blue">&lt;head&gt;</code></a>.</p>
+
+<p>Example HTML Code:</p>
+ <br><img src="code10.png" alt="code" width="50%" height="40%" class="code-image">
+          <p>Output:</p>
+         <div class="output-box"><a href="#"><p>HTML</p></a></div>
+        </div>
+
+&nbsp;&nbsp;
+        &nbsp;
+
+
+        
+    </body>
+
+</html>
